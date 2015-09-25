@@ -1,0 +1,68 @@
+import java.util.Scanner;
+/**
+ * the question of this problem will be found here"http://codeforces.com/contest/572/problem/A"
+ * @author Nafees_Iqbal
+ *
+ */
+public class Arrays {
+	int k,m;
+	static int [] A;
+	static int[] B;
+	static int numA;
+	static int numB;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int k=Integer.parseInt(input.next());
+		int m=Integer.parseInt(input.next());
+		
+		 numA=Integer.parseInt(input.next());
+		 numB=Integer.parseInt(input.next());
+		A=new int[k];
+		B=new int[m];
+		System.out.println(A.length);
+	A=readNumsFromCommandLine(k);
+	System.out.println(A.length);
+	System.out.println(A[1]);
+	B=readNumsFromCommandLine(m);
+		
+		
+		int loop=B.length;
+		for(int i=0;i<numA;i++){
+			for(int j=loop;j>loop-numB;j--){
+				if(A[i]<B[j]){
+					System.out.println("YES");
+					break;
+				}
+				else{
+					System.out.println("NO");
+				}
+				
+			}
+		}
+		
+
+	}
+	public static int [] readNumsFromCommandLine(int t) {
+
+        Scanner s = new Scanner(System.in);
+
+        int count = s.nextInt();
+        s.nextLine(); // throw away the newline.
+
+        int [] numbers = new int[t];
+        Scanner numScanner = new Scanner(s.nextLine());
+        for (int i = 0; i < count; i++) {
+            if (numScanner.hasNextInt()) {
+                numbers[i] = numScanner.nextInt();
+            } else {
+                System.out.println("You didn't provide enough numbers");
+                break;
+            }
+        }
+
+        return numbers;
+    }
+
+}

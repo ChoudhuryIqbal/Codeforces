@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Please inter the length of your sequence?");
+		System.out.println("Please enter your sequence now?");
+
+	}
+
+}

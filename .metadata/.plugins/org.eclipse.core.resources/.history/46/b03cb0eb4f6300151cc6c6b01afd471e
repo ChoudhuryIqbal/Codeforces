@@ -1,0 +1,65 @@
+import java.util.Scanner;
+/**
+ * the question of this problem will be found here"http://codeforces.com/contest/572/problem/A"
+ * @author Nafees_Iqbal
+ *
+ */
+public class Arrays {
+	int k,m;
+	static int [] A;
+	static int[] B;
+	static int numA;
+	static int numB;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int k=Integer.parseInt(input.next());
+		int m=Integer.parseInt(input.next());
+		
+		 numA=Integer.parseInt(input.next());
+		 numB=Integer.parseInt(input.next());
+		A=new int[numA];
+		B=new int[numB];
+		while(input.hasNext()){
+			int i=0;
+			A[i]=Integer.parseInt(input.next());
+			i++;
+		}
+		while(input.hasNext()){
+			int j=0;
+			B[j]=Integer.parseInt(input.next());
+			j++;
+		}
+		/*for(int i=0;i<(2*k-1);i+=2){
+			A[i]=Integer.parseInt(input.next());
+		}
+		for(int j=0;j<2*k-1;j+=2){
+			B[j]=Integer.parseInt(input.next());
+		}
+		System.out.println(numA);
+		System.out.println(numB);*/
+		compare(A,B);
+		
+
+	}
+
+	private static String compare(int[] a2, int[] b2) {
+		// TODO Auto-generated method stub
+		int loop=b2.length;
+		for(int i=0;i<numA;i++){
+			for(int j=loop;j>loop-numB;j--){
+				if(A[i]<B[j]){
+					return "YES";
+					
+				}
+				else{
+					System.out.println("NO");
+				}
+				
+			}
+		}
+		return "NO";
+	}
+
+}

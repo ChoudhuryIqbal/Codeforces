@@ -1,0 +1,28 @@
+import java.util.Arrays;
+import java.util.Scanner;
+//import java.util.ArrayList;
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		KefaStep k=new KefaStep();
+		Scanner  input=new Scanner(System.in);
+		System.out.println("Please inter the length of your sequence?");
+		k.setCount(input.nextInt());
+		System.out.println(k.getCount());
+		
+		Scanner list=new Scanner(System.in);
+		System.out.println("Please enter your sequence now?");
+		
+		for(int i=0; i<k.getCount();i++){
+			if(input.hasNextInt()){
+				k.sequence.add(input.nextInt());
+			}
+		}
+		System.out.println(k.sequence);
+
+	}
+
+	
+
+}

@@ -1,0 +1,12 @@
+/**
+ * This program is written for "http://codeforces.com/problemset/problem/580/A" problem
+ * 
+ * @author Nafees_Iqbal
+ *
+ */
+public class KefaStep 
+{
+	public int count;
+	
+
+}

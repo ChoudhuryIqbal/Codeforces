@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Arrays {
+	int k,m;
+	int [] A;
+	int[] B;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int k=Integer.parseInt(input.next());
+		int m=Integer.parseInt(input.next());
+		
+		int numA=Integer.parseInt(input.next());
+		int numB=Integer.parseInt(input.next());
+		System.out.println(numA);
+		System.out.println(numB);
+		
+
+	}
+
+}

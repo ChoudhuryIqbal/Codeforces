@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		KefaStep k=new KefaStep();
+		Scanner  input=new Scanner(System.in);
+		System.out.println("Please inter the length of your sequence?");
+		k.setCount(input.nextInt());
+		System.out.println(k.getCount());
+	
+		System.out.println("Please enter your sequence now?");
+
+	}
+
+	
+
+}
